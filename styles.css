@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.lyrics-container {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    max-width: 90%;
+}
+
+#lyrics-spanish {
+    font-family: 'Arial', sans-serif; /* Usar una fuente sans-serif */
+    font-size: 28px; /* Tamaño de la letra */
+    color: #000000; /* Color negro para el texto */
+    text-align: center; /* Centrar el texto */
+    font-weight: bold; /* Hacer la fuente más gruesa */
+    line-height: 1.4; /* Espaciado entre líneas */
+    max-width: 80%; /* Limitar el ancho para evitar que el texto sea demasiado largo */
+    word-wrap: break-word; /* Evitar que el texto se salga del contenedor */
+}
+
+
+#lyrics-spanish.visible {
+    opacity: 1; /* Hace que el texto sea visible cuando se aplica la clase 'visible' */
+}
+
+#play-btn {
+    width: 100px; /* Tamaño del botón */
+    height: 100px; /* Tamaño del botón */
+    font-size: 40px; /* Tamaño del icono de play */
+    background-color: #d70f64; /* Color de fondo principal */
+    border: none; /* Eliminar borde predeterminado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: all 0.3s ease; /* Transición suave */
+    cursor: pointer;
+}
+
+/* Efecto de hover: incremento de escala */
+#play-btn:hover {
+    background-color: #ff4b5c; /* Cambio de color al pasar el ratón */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Aumento de sombra */
+    transform: scale(1.1); /* Aumentar tamaño */
+}
+
+/* Efecto de clic: color sólido y sin sombra */
+#play-btn:active {
+    background-color: #ff4b5c; /* Color sólido al presionar */
+    box-shadow: none; /* Eliminar sombra */
+    transform: scale(1); /* Volver al tamaño original */
+}
+
+
+
