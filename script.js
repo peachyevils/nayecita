@@ -140,6 +140,6 @@ function moveCats() {
 }
 
 // Llamamos a la función para mover los gatitos cada 2 segundos
-setInterval(moveCats, 20000);
+setInterval(moveCats, 1000);
 
 
